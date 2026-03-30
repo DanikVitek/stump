@@ -2278,7 +2278,10 @@
 			"providerForm": {
 				"apiToken": {
 					"label": "API token",
-					"description": "The API token for authenticating with this provider"
+					"description": "The API token for authenticating with this provider",
+					"validationError": "The auto-validation failed for this token",
+					"validationRequestError": "The validation request failed",
+					"validationRequestErrorUnknown": "An unknown error occurred during validation"
 				},
 				"apiTokenExpiresAt": {
 					"label": "API token expiration",
@@ -2300,7 +2303,7 @@
 					},
 					"strategy": {
 						"label": "Merge strategy",
-						"configuration": {
+						"options": {
 							"FILL_GAPS": "Accept missing fields",
 							"FILL_AND_MERGE_LISTS": "Accept missing fields and merge lists",
 							"PREFER_EXTERNAL": "Prefer external data"
