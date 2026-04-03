@@ -14,7 +14,6 @@ mod library;
 mod log;
 mod media;
 mod notifier;
-mod reading_list;
 mod scheduled_job_config;
 mod series;
 mod server_config;
@@ -40,7 +39,6 @@ use library::LibraryMutation;
 use log::LogMutation;
 use media::MediaMutation;
 use notifier::NotifierMutation;
-use reading_list::ReadingListMutation;
 use scheduled_job_config::ScheduledJobConfigMutation;
 use series::SeriesMutation;
 use server_config::ServerConfigMutation;
@@ -87,7 +85,7 @@ struct SystemMutations(
 struct ListMutations(
 	SmartListMutation,
 	SmartListViewMutation,
-	ReadingListMutation,
+	// ListMutation,
 	CustomEmojiMutation,
 );
 
