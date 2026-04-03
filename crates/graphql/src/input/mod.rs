@@ -4,6 +4,7 @@ pub mod email_device;
 pub mod emailer;
 pub mod filesystem;
 pub mod library;
+pub mod list;
 pub mod media;
 pub mod notifier;
 pub mod reading_list;
